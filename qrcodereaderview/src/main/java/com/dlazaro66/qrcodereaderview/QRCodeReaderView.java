@@ -135,6 +135,7 @@ public class QRCodeReaderView extends SurfaceView
      */
     public void startCamera() {
         mCameraManager.startPreview();
+        mCameraManager.setPreviewCallback(this);
     }
 
     /**
